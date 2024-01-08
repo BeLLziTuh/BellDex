@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/bulbasaurGif.gif" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>BellDex</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="searchBox">
+            <input class="searchInput" type="text" id="searchInput" placeholder="choose a pokémon">
+            <button type="button" class="searchBtn">
+                <img class="searchBtnIcon" src="imgs/searchIconSvg.svg" alt="searchBtnIcon">
+            </button>
+        </div>
+        <div class="card">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="card-inner">
+                <div class="preBlurDiv">
+                    <img class="imgPlaceholder" src="imgs/bulbasaurPng.png" alt="Pokémon!">
+                    <img class="imgPlaceholderFront" src="imgs/bulbasaurPng.png" alt="Pokémon!">
+                </div>
+                <div class="posBlurDiv">
+                    <img class="imgBlur" src="imgs/bulbasaurGif.gif" alt="Pokémon!">
+                    <span class="pokemonType"><strong>Grass</strong></span>
+                    <span class="pokemonName"><strong>Bulbasaur</strong></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
