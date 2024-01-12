@@ -152,15 +152,14 @@ body {
 }
 
 .imgPlaceholder {
-    width: calc(100% - 45%);
+    width: 125%;
     border-radius: 50%;
     position: absolute;
     transition: 0.2s ease-in-out;
-    border: solid 60px #53ef7d;
-    filter: blur(10px);
+    animation: move-up6 0.8s ease infinite alternate-reverse;
 }
 
-.imgPlaceholderFront {
+.imgPlaceholderBorder {
     width: calc(100% - 45%);
     border-radius: 50%;
     position: absolute;
