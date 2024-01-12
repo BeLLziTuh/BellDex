@@ -14,7 +14,7 @@
 
     <div class="container">
         <div class="searchBox">
-            <input class="searchInput" type="text" id="searchInput" placeholder="choose a pokémon">
+            <input class="searchInput" type="text" placeholder="choose a pokémon">
             <button type="button" class="searchBtn">
                 <img class="searchBtnIcon" src="imgs/searchIconSvg.svg" alt="searchBtnIcon">
             </button>
@@ -24,13 +24,12 @@
             <div class="circle"></div>
             <div class="card-inner">
                 <div class="preBlurDiv">
-                    <img class="imgPlaceholder" src="imgs/bulbasaurPng.png" alt="Pokémon!">
-                    <img class="imgPlaceholderFront" src="imgs/bulbasaurPng.png" alt="Pokémon!">
+                    <img class="imgPlaceholderBorder" id="imgPlaceholderFront" src="imgs/bulbasaurPng.png" alt="Pokémon!">
                 </div>
                 <div class="posBlurDiv">
-                    <img class="imgBlur" src="imgs/bulbasaurGif.gif" alt="Pokémon!">
-                    <span class="pokemonType"><strong>Grass</strong></span>
-                    <span class="pokemonName"><strong>Bulbasaur</strong></span>
+                    <img class="imgBlur" id="imgBlur" src="imgs/bulbasaurGif.gif" alt="Pokémon!">
+                    <span class="pokemonType" id="pokemonType">Grass</span>
+                    <span class="pokemonName" id="pokemonName">Bulbasaur</span>
                 </div>
             </div>
         </div>
