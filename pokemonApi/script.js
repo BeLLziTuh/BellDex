@@ -21,7 +21,7 @@ const renderPokemon = async (pokemon) => {
     const data = await fetchData(pokemon)
 
     if (data) {
-        pokemonName.innerHTML = data.name
+        pokemonName.innerHTML = 'id: ' + data.id + '<br>' + data.name
         pokemonType.innerHTML = data.types[0].type.name
         pokemonProfilePic.src = data.sprites.front_default
         pokemonProfilePic.classList.remove('imgPlaceholderBorder')
