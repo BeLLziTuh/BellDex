@@ -31,14 +31,14 @@ const renderPokemon = async (pokemon) => {
         pokemonName.innerHTML = 'Not Found'
         pokemonType.innerHTML = 'Not Found'
     }
-
-    searchBtn.addEventListener('click', async () => {
-        await renderPokemon(searchInput.value.toLowerCase())
-    })
-    
-    searchInput.addEventListener('keypress', async (key) => {
-        if (key.key === 'Enter') {
-            await renderPokemon(searchInput.value.toLowerCase())
-        }
-    })
 }
+
+searchBtn.addEventListener('click', async () => {
+    await renderPokemon(searchInput.value.toLowerCase())
+})
+
+searchInput.addEventListener('keypress', async (key) => {
+    if (key.key === 'Enter') {
+        await renderPokemon(searchInput.value.toLowerCase())
+    }
+})
