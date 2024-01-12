@@ -33,12 +33,12 @@ const renderPokemon = async (pokemon) => {
     }
 }
 
-searchBtn.addEventListener('click', async () => {
-    await renderPokemon(searchInput.value.toLowerCase())
+searchBtn.addEventListener('click', () => {
+    renderPokemon(searchInput.value.toLowerCase())
 })
 
-searchInput.addEventListener('keypress', async (key) => {
+searchInput.addEventListener('keypress', (key) => {
     if (key.key === 'Enter') {
-        await renderPokemon(searchInput.value.toLowerCase())
+        renderPokemon(searchInput.value.toLowerCase())
     }
 })
