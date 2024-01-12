@@ -10,7 +10,7 @@ const apiUrl = 'https://pokeapi.co/api/v2/pokemon/'
 
 const fetchData = async (pokemon) => {
     const apiResponse = await fetch(`${apiUrl}${pokemon}`)
-    if (!apiResponse.status.ok) {
+    if (apiResponse.status == 404) {
         alert('Incorrect or invalid pokemon name!')
         console.log('404 Not found. Incorrect or invalid pokemon name, please chance the pokemon name to a valid one!');
     }
